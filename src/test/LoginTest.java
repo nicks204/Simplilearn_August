@@ -61,7 +61,7 @@ public class LoginTest {
 		WebElement ErrorMsg = driver.findElement(By.className("error_msg"));
 		String ActError = ErrorMsg.getText();
 		
-		String ExpError = "The email or password you have entered is invalid";
+		String ExpError = "The email or password you have entered is invalid.";
 		
 		Assert.assertEquals(ActError, ExpError);
 		
